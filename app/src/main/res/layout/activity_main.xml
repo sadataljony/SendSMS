@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextSmsBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|start"
+        android:hint="Type Your SMS here..."
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/buttonSendSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send SMS" />
+
+
+</LinearLayout>
